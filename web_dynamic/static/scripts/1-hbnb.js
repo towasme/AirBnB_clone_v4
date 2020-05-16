@@ -1,6 +1,4 @@
-console.log('antes');
 $(document).ready(function () {
-  console.log('linea 2');
   const amenitiesName = {};
   $(document).on('change', "input[type='checkbox']", function () {
     if (this.checked) {
@@ -8,7 +6,6 @@ $(document).ready(function () {
       console.log('lnea 6');
       $('h4').addClass('entro_perro');
     } else {
-      console.log('lnea 8');
       delete amenitiesName[$(this).data('id')];
     }
     const lenList = Object.values(amenitiesName).length;
