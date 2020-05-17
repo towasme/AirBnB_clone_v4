@@ -41,6 +41,14 @@ button:hover {
     font-weight: 400;
     font-size: 14px;
 }
+.selection_amenities {
+    width: 200px;
+    white-space: nowrap;
+}
+.selection_amenities h4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
 .locations {
     height: 100%;
     width: 25%;
@@ -89,7 +97,7 @@ button:hover {
 .popover ul li{
     padding: 4px;
     padding-left: 10px;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .popover ul h2{

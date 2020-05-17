@@ -8,9 +8,9 @@ $(document).ready(function () {
     }
     const lenList = Object.values(amenitiesName).length;
     if (lenList > 0) {
-      $('div.amenities > h4').text(Object.values(amenitiesName).join(', '));
+      $('div.selection_amenities h4').text(Object.values(amenitiesName).join(', '));
     } else {
-      $('div.amenities > h4').html('&nbsp;');
+      $('div.selection_amenities h4').html('&nbsp;');
     }
   });
 });

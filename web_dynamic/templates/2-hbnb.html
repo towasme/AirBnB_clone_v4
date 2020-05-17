@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/3-footer.css">
-    <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css">
-    <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?{{ cache_id }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?{{ cache_id }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-footer.css?{{ cache_id }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css?{{ cache_id }}">
+    <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{ cache_id }}">
 	<link rel="icon" href="../static/images/icon.png" />
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="../static/scripts/2-hbnb.js?{{ cache_id }}"></script>
@@ -14,15 +14,14 @@
   </head>
   <body>
     <header>
-	  <div id="api_status" style=" position: relative; float: right; background-color: #cccccc; margin: 15px 25px; width: 40px;
-	  height: 40px; border-radius: 20px;"></div>
+	  <div id="api_status"></div>
 	  <div class="logo"></div>
     </header>
     <div class="container">
       <section class="filters">
 	<div class="locations">
 	  <h3>States</h3>
-	  <h4>&nbsp;</h4>
+	  <div class="selection_amenities"><h4>&nbsp;</h4></div>
 	  <div class="popover">
 	    <ul>
 	      {% for state in states %}
